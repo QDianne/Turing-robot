@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+.wrapper .name {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: grey;
+    color: #fff;
+}
+
+.content-box {
+    overflow-y: scroll;
+    height: calc(100% - 90px);
+}
+
+.avitor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.mine .avitor {
+    background-image: url('./img/1.jpeg');
+}
+
+.robot .avitor {
+    background-image: url('./img/1.jpg');
+}
+
+.text {
+    max-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.mine .text {
+    background-color: greenyellow;
+    margin: 0 10px;
+}
+
+.mine .text:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-left-color: greenyellow;
+    right: -20px;
+}
+
+.robot .text {
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.robot .text:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-right-color: #fff;
+    left: -20px;
+}
+
+.mine {
+    float: right;
+    width: 500px;
+    margin: 10px;
+}
+
+.robot {
+    float: left;
+    width: 500px;
+    margin: 10px;
+}
+
+.mine div {
+    float: right;
+}
+
+.robot div {
+    float: left;
+}
+
+.input-content {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.input-content .inp {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+
+.input-content .btn {
+    font-size: 16px;
+    padding: 3px 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    outline: none;
+    border: none;
+}
+
+.input-content .btn:hover {
+    background-color: #bbb;
+}
